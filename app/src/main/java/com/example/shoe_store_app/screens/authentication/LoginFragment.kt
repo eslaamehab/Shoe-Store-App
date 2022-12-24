@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
@@ -18,9 +19,10 @@ class LoginFragment : Fragment() {
         val binding: LoginFragmentBinding = DataBindingUtil.inflate(
             inflater, R.layout.login_fragment, container, false)
 
-//        binding.signIn.setOnClickListener {
-//            findNavController().navigate(LoginFragmentDirections.actionTitleToGame())
-//        }
+        binding.signIn.setOnClickListener {
+            findNavController().navigate(LoginFragmentDirections.actionLoginFragmentToWelcomeFragment3())
+            Toast.makeText(context, "KKKKKKKK", Toast.LENGTH_LONG).show()
+        }
         return binding.root
     }
 
