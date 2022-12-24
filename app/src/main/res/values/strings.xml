@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Shoe-Store-App</string>
+    <string name="welcome_to_my_shoe_store">Welcome To My Shoe Store</string>
+    <string name="enter_your_credentials">Enter Your Credentials</string>
+    <string name="email_address">Email Address</string>
+    <string name="forgot_your_password">Forgot Your Password ?</string>
+    <string name="password">Password</string>
+    <string name="log_in">Log In</string>
+    <string name="not_yet_registered">Not yet registered ?</string>
+    <string name="sign_up">Sign Up</string>
 </resources>
