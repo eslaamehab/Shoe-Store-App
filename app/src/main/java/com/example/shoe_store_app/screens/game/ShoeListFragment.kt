@@ -61,6 +61,10 @@ class ShoeListFragment : Fragment() {
             findNavController().navigate(ShoeListFragmentDirections.actionShoeListFragmentToShoeDetailFragment())
         }
 
+        binding.logOut.setOnClickListener{
+            findNavController().navigate(ShoeListFragmentDirections.actionShoeListFragmentToLoginFragment())
+        }
+
 
 
         return binding.root
