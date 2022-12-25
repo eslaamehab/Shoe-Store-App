@@ -29,28 +29,4 @@ class LoginFragment : Fragment() {
         return binding.root
     }
 
-
-//
-//    import com.example.shoe_store_app.databinding.ActivityMainBinding
-//    class MainActivity : AppCompatActivity() {
-//
-//        private lateinit var binding: ActivityMainBinding
-//
-//
-//        override fun onCreate(savedInstanceState: Bundle?) {
-//            super.onCreate(savedInstanceState)
-//
-//            binding = ActivityMainBinding.inflate(layoutInflater)
-////        val binding = DataBindingUtil.setContentView<ActivityMainBinding>(this, R.layout.activity_main)
-//
-//            val view = binding.root
-//            setContentView(view)
-//
-//            binding.name.text = viewModel.name
-//            binding.button.setOnClickListener { viewModel.userClicked() }
-//
-//
-//        }
-//    }
-
 }
