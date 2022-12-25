@@ -15,13 +15,16 @@ class LoginFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View {
-        // Inflate the layout for this fragment
+        // Inflate the layout for this fragment and obtain an instance of the binding class
         val binding: LoginFragmentBinding = DataBindingUtil.inflate(
             inflater, R.layout.login_fragment, container, false)
 
+
         binding.signIn.setOnClickListener {
             findNavController().navigate(LoginFragmentDirections.actionLoginFragmentToWelcomeFragment3())
-            Toast.makeText(context, "KKKKKKKK", Toast.LENGTH_LONG).show()
+        }
+        binding.signup.setOnClickListener {
+            findNavController().navigate(LoginFragmentDirections.actionLoginFragmentToWelcomeFragment3())
         }
         return binding.root
     }

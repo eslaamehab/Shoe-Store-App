@@ -32,9 +32,13 @@ class WelcomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        // Inflate view and obtain an instance of the binding class
+        // Inflate the layout for this fragment and obtain an instance of the binding class
         val binding: WelcomeFragmentBinding = DataBindingUtil.inflate(
             inflater, R.layout.welcome_fragment, container, false)
+
+        binding.instructions.setOnClickListener{
+            findNavController().navigate(WelcomeFragmentDirections.actionWelcomeFragmentToInstructionsFragment())
+        }
 
         return binding.root
 
