@@ -17,11 +17,3 @@
         app:navGraph="@navigation/navigation"
          />
 </merge>
-
-    <!--     android:id="@+id/loginFragment"
-     android:name="com.example.shoe_store_app.screens.authentication.LoginFragment"-->
-
-<!--<fragment-->
-
-
-<!--    app:navGraph="@navigation/main_navigation"-->
