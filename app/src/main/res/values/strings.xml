@@ -13,4 +13,12 @@
     <string name="instructions">Instructions</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="my_shoe_store_instructions">My Shoe Store Instructions</string>
+    <string name="shoe_list">Shoe List</string>
+    <string name="instruction_one">By tapping the - Shoe List - button bellow, you will navigate to my store\'s list of our finest shoes</string>
+    <string name="instruction_two">In this shoe list screen you can browse, add and edit my store\'s list of shoes.</string>
+    <string name="shoes_image">Shoes Image</string>
+    <string name="shoes_name">Shoes Name</string>
+    <string name="brand_name">Brand Name</string>
+    <string name="shoes_size">Shoes Size</string>
 </resources>

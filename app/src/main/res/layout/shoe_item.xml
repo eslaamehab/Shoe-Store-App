@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="shoeListViewModel"
+            type="com.example.shoe_store_app.screens.game.ShoeListViewModel" />
+    </data>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="130dp">
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/credentials"/>
+
+    <ImageView
+        android:id="@+id/shoeImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:contentDescription="@string/shoes_image"
+        android:src="@drawable/a"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/brandName"
+        android:textSize="20sp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/shoeImage"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/brand_name" />
+
+    <TextView
+        android:id="@+id/shoeName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/brandName"
+        app:layout_constraintTop_toBottomOf="@+id/brandName"
+        tools:text="@string/shoes_name" />
+
+    <TextView
+        android:id="@+id/shoeSize"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/brandName"
+        app:layout_constraintTop_toBottomOf="@+id/brandName"
+        tools:text="@string/shoes_size" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    </layout>
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="match_parent"-->
+    <!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--    android:layout_margin="10dp">-->
+
+    <!--    <com.google.android.material.imageview.ShapeableImageView-->
+    <!--        android:id="@+id/shoe_item"-->
+    <!--        android:layout_width="80dp"-->
+    <!--        android:layout_height="80dp"-->
+    <!--        android:adjustViewBounds="true"-->
+    <!--        android:scaleType="centerCrop"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        android:src="@drawable/a"-->
+    <!--        />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/itemText"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:text="TEST TEXT, Very Test Text"-->
+    <!--        android:textSize="16dp"-->
+    <!--        android:textStyle="bold"-->
+    <!--        android:layout_marginStart="16dp"-->
+    <!--        android:layout_marginEnd="32dp"-->
+    <!--        android:layout_marginTop="8dp"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toEndOf="@+id/shoe_item"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        />-->
+    <!--    <View-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="1dp"-->
+    <!--        android:layout_margin="8dp"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/shoe_item"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        android:background="@color/underline"/>-->
+
+
+
+
+    <!--</androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+
+<!--<Button-->
+<!--android:id="@+id/sizeShoeList"-->
+<!--android:layout_width="50dp"-->
+<!--android:layout_height="50dp"-->
+<!--android:layout_marginTop="0dp"-->
+<!--android:layout_marginEnd="25dp"-->
+<!--android:layout_marginBottom="25dp"-->
+<!--app:layout_constraintEnd_toEndOf="parent"-->
+<!--app:layout_constraintHorizontal_chainStyle="spread"-->
+<!--app:layout_constraintTop_toBottomOf="@+id/nameCompanyList"-->
+<!--tools:text="10" />-->

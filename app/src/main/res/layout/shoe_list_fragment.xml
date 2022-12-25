@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".game.ShoeListFragment">
+
+    <data>
+        <variable
+            name="shoeListViewModel"
+            type="com.example.shoe_store_app.screens.game.ShoeListViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="40dp"
+            android:clickable="true"
+            android:focusable="true"
+
+            android:src="@drawable/img"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/textWelcomeScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:id="@+id/shoeItemList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="100dp"
+                android:orientation="vertical" />
+
+        </androidx.core.widget.NestedScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
+
+<!--FLOATING BUTTON ACTION ABOVE SRC-->
+<!--    android:onClick="@{()-> shoeListViewModel.goToShoeDetailStart()}"-->
+
+
+
+
+
+<!--<LinearLayout-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:orientation="vertical"-->
+<!--android:gravity="center"-->
+<!--android:background="@drawable/credentials"-->
+<!--android:layout_marginTop="50dp">-->
+
+<!--<TextView-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:paddingTop="25dp"-->
+<!--    android:text="SHOE LIST SCREEN"-->
+<!--    android:textColor="@color/black"-->
+<!--    android:textSize="20sp"-->
+<!--    android:textStyle="normal"-->
+<!--    android:textAlignment="center"-->
+<!--    android:gravity="center"-->
+<!--    android:layout_marginBottom="100dp"/>-->
+
+
+<!--<Button-->
+<!--    android:id="@+id/instructions"-->
+<!--    android:text="BUTTON"-->
+<!--    android:textSize="15sp"-->
+<!--    android:elevation="15dp"-->
+<!--    android:gravity="center"-->
+<!--    android:layout_marginStart="20dp"-->
+<!--    android:layout_marginEnd="20dp"-->
+<!--    android:layout_gravity="center"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    app:shapeAppearanceOverlay="@style/SignupButton"-->
+<!--    app:backgroundTint="@color/black"/>-->
+
+
+<!--</LinearLayout>-->
