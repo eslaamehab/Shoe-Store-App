@@ -10,8 +10,7 @@ It is carried out to demonstrate our understanding of views, layouts, constraint
 This project consists of five screens
 
 1. Login
-<img width="213" alt="login" src="https://user-images.githubusercontent.com/74051160/209482209-61e1f7b6-1d93-4a0c-a63c-76df414cf288.png">
-
+![](app/src/Screenshots/login.png)
 
 
 2. Welcome Onboarding
