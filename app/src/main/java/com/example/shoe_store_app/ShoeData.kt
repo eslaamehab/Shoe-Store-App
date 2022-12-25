@@ -1,10 +1,5 @@
 package com.example.shoe_store_app
 
-//import android.os.Parcelable
-//import kotlinx.android.parcel.Parcelize
-//
-//@Parcelize
-
 data class ShoeData(
     var name: String,
     var size: Int,
@@ -17,6 +12,4 @@ data class ShoeData(
         "model_2"
     )
 )
-
-//    : Parcelable
 
