@@ -57,6 +57,10 @@ class ShoeListFragment : Fragment() {
         viewModel = ViewModelProvider(this)[ShoeListViewModel::class.java]
         binding.shoeListViewModel = viewModel
 
+        binding.floatingActionButton.setOnClickListener {
+            findNavController().navigate(ShoeListFragmentDirections.actionShoeListFragmentToShoeDetailFragment())
+        }
+
 
 
         return binding.root

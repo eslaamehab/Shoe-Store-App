@@ -2,11 +2,18 @@
 <layout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".screens.authentication.LoginFragment">
+
+    <data>
+
+        <variable
+            name="loginViewModel"
+            type="com.example.shoe_store_app.screens.authentication.LoginViewModel" />
+    </data>
 
 <LinearLayout
     android:id="@+id/login_layout"
-    tools:context=".screens.authentication.LoginFragment"
     android:name="com.example.shoe_store_app.screens.authentication.LoginFragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -155,7 +162,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:shapeAppearanceOverlay="@style/SignupButton"
-                app:backgroundTint="@color/black"/>
+                app:backgroundTint="@color/black"
+                />
 
 
 

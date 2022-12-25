@@ -21,4 +21,10 @@
     <string name="shoes_name">Shoes Name</string>
     <string name="brand_name">Brand Name</string>
     <string name="shoes_size">Shoes Size</string>
+    <string name="image_description">Image Description</string>
+    <string name="choose_your_size">Choose your size</string>
+    <string name="save">Save</string>
+    <string name="description">Description</string>
+    <string name="name">Name</string>
+    <string name="shoe_name">Shoe Name</string>
 </resources>
