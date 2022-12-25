@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".screens.game.ShoeDetailFragment">
+
+    <data>
+
+        <variable
+            name="shoeDetailViewModel"
+            type="com.example.shoe_store_app.screens.game.ShoeDetailViewModel" />
+
+        <variable
+            name="shoe"
+            type="com.example.shoe_store_app.ShoeData" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/a"
+            app:layout_constraintBottom_toTopOf="@+id/shoeBottom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/size"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/choose_your_size"
+            app:layout_constraintBottom_toTopOf="@+id/buttonFive"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/saveButton"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="@string/save"
+            app:layout_constraintBottom_toBottomOf="@+id/cancel_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toEndOf="@+id/cancel_button" />
+
+        <Button
+            android:id="@+id/cancel_button"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@android:string/cancel"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/buttonFive"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="16dp"
+            android:text="5"
+            app:layout_constraintBottom_toTopOf="@+id/cancel_button"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/buttonSix"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:text="6"
+            app:layout_constraintBottom_toBottomOf="@+id/buttonFive"
+            app:layout_constraintStart_toEndOf="@+id/buttonFive" />
+
+        <Button
+            android:id="@+id/buttonSeven"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:text="7"
+            app:layout_constraintBottom_toBottomOf="@+id/buttonFive"
+            app:layout_constraintStart_toEndOf="@+id/buttonSix" />
+
+        <Button
+            android:id="@+id/buttonEight"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:text="8"
+            app:layout_constraintBottom_toBottomOf="@+id/buttonFive"
+            app:layout_constraintStart_toEndOf="@+id/buttonSeven" />
+
+        <Button
+            android:id="@+id/buttonNine"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:text="9"
+            app:layout_constraintBottom_toBottomOf="@+id/buttonFive"
+            app:layout_constraintStart_toEndOf="@+id/buttonEight" />
+
+        <EditText
+            android:id="@+id/companyNameEdit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:autofillHints=""
+            android:hint="@string/brand_name"
+            android:text="@={shoe.company}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/brandName"
+            app:layout_constraintTop_toTopOf="@+id/shoeBottom"
+            tools:ignore="UnknownId" />
+
+        <EditText
+            android:id="@+id/shoeNameEdit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:autofillHints=""
+            android:hint="@string/shoe_name"
+            android:text="@={shoe.name}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/companyNameEdit"
+            app:layout_constraintTop_toBottomOf="@+id/companyNameEdit" />
+
+        <TextView
+            android:id="@+id/brandName"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/brand_name"
+            app:layout_constraintBaseline_toBaselineOf="@+id/companyNameEdit"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/shoeName"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/shoe_name"
+            app:layout_constraintBaseline_toBaselineOf="@+id/shoeNameEdit"
+            app:layout_constraintEnd_toEndOf="@+id/brandName" />
+
+        <EditText
+            android:id="@+id/descriptionEditText"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:autofillHints=""
+            android:background="@drawable/credentials"
+            android:gravity="start|top"
+            android:hint="@string/description"
+            android:importantForAutofill="yes"
+            android:inputType="textMultiLine"
+            android:padding="10dp"
+            android:text="@={shoe.description}"
+            app:layout_constraintBottom_toTopOf="@+id/size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/shoeNameEdit" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>
+
+
+<!--    android:onClick="@{()->detailShoeDetailViewModel.changeShoePicture()}"
+android:onClick="@{()->detailShoeDetailViewModel.changeShoePicture()}"
+android:onClick="@{()->detailShoeDetailViewModel.changeShoePicture()}"
+android:onClick="@{()-> detailShoeDetailViewModel.saveShoeDetailStart()}"
+android:onClick="@{()-> detailShoeDetailViewModel.cancelShoeDetailStart()}"
+android:onClick="@{(view) -> detailShoeDetailViewModel.setSize(view, 8)}"
+            android:onClick="@{(view) -> detailShoeDetailViewModel.setSize(view, 9)}"
+            android:onClick="@{(view) -> detailShoeDetailViewModel.setSize(view, 10)}"
+            android:onClick="@{(view) -> detailShoeDetailViewModel.setSize(view, 11)}"
+
+            android:onClick="@{(view) -> detailShoeDetailViewModel.setSize(view, 12)}"-->
