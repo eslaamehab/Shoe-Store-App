@@ -10,24 +10,26 @@ It is carried out to demonstrate our understanding of views, layouts, constraint
 This project consists of five screens
 
 1. Login
-![](app/src/Screenshots/login.png)
+
+![ImgOfLogin](app/src/Screenshots/login.png)
 
 
 2. Welcome Onboarding
-<img width="175" alt="welcome" src="https://user-images.githubusercontent.com/74051160/209482206-6b7fdd36-eb79-4d1b-a9c7-47a1bb4a2dd7.png">
 
+![ImgOfWelcome](app/src/Screenshots/welcome.png)
 
 3. Instructions Onboarding
-<img width="270" alt="instructions" src="https://user-images.githubusercontent.com/74051160/209482203-e0ae0fe5-1743-464f-8ced-022e893903fb.png">
 
+![ImgOfInstruction](app/src/Screenshots/instructions.png)
 
 
 4. List of Shoes Items
-item:
-<img width="272" alt="shoe tem" src="https://user-images.githubusercontent.com/74051160/209482200-abaf9404-38cc-4edb-b15f-1afc7f3cf93c.png">
 
+item's layout:
+
+![ImgOfItem](app/src/Screenshots/shoe tem.png)
 
 
 5. Shoe Details
-<img width="271" alt="detail" src="https://user-images.githubusercontent.com/74051160/209482210-798ef778-5f22-4d1d-9301-a1175ebbcdc4.png">
- 
+
+![ImgOfLogin](app/src/Screenshots/detail.png)
