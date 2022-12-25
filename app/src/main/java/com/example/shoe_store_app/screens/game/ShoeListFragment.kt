@@ -54,35 +54,13 @@ class ShoeListFragment : Fragment() {
 
 
         //initialzie view model
-//        viewModel = ViewModelProvider(requireActivity()).get(ShareViewModel::class.java)
         viewModel = ViewModelProvider(this)[ShoeListViewModel::class.java]
         binding.shoeListViewModel = viewModel
-
-
-        //initialize observers
-//        viewModel.eventAddShoeListPress.observe(viewLifecycleOwner, {
-//            if (it) {
-//                goToShoeList()
-//                viewModel.goToShoeDetailStartComplete()
-//            }
-//        })
-//
-//        viewModel.shoesList.observe(viewLifecycleOwner, { listShoes ->
-//            initShoeList(listShoes)
-//        })
-
-        (activity as AppCompatActivity).supportActionBar?.show()
-        (activity as AppCompatActivity).supportActionBar!!.setDisplayHomeAsUpEnabled(false)
 
 
 
         return binding.root
     }
-
-
-    // go to show detail
-    
-    
 
 
     private fun initShoeList(listShoes: MutableList<ShoeData>) {
@@ -111,9 +89,6 @@ class ShoeListFragment : Fragment() {
             index++
         }
     }
-
-
-
 
 //    companion object {
 //        /**
