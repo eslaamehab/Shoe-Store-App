@@ -38,19 +38,19 @@
                 android:layout_marginBottom="100dp"
                 android:orientation="vertical" >
 
-                <Button
-                    android:id="@+id/log_out"
-                    android:text="@string/log_out"
-                    android:textSize="15sp"
-                    android:elevation="15dp"
-                    android:gravity="center"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginEnd="20dp"
-                    android:layout_gravity="center"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:shapeAppearanceOverlay="@style/SignupButton"
-                    app:backgroundTint="@color/red"/>
+<!--                <Button-->
+<!--                    android:id="@+id/log_out"-->
+<!--                    android:text="@string/log_out"-->
+<!--                    android:textSize="15sp"-->
+<!--                    android:elevation="15dp"-->
+<!--                    android:gravity="center"-->
+<!--                    android:layout_marginStart="20dp"-->
+<!--                    android:layout_marginEnd="20dp"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    app:shapeAppearanceOverlay="@style/SignupButton"-->
+<!--                    app:backgroundTint="@color/red"/>-->
 
 
             </LinearLayout>
