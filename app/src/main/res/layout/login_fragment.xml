@@ -5,6 +5,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".screens.authentication.LoginFragment">
 
+    <!--    Here, I structured my view using Linear layout as children of linear layouts
+    because I needed to orient my views vertically in different positions-->
+
     <data>
 
         <variable

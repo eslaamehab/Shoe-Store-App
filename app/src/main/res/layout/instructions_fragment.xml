@@ -4,6 +4,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+<!--    Here, I chose Linear layout as I only have a
+simple vertical orientation of text views and a button-->
+
     <LinearLayout
         android:id="@+id/instructions_layout01"
         tools:context=".screens.home.InstructionsFragment"

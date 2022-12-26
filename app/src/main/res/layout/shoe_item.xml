@@ -3,6 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <!--
+    Here, I chose constraint layout because
+    inside the parent view I wanted to place other detail
+    views which has a relatively complex orientation
+    and it is easier to build views of complex orientation
+    with constraint view -->
     <data>
 
         <variable

@@ -5,6 +5,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".game.ShoeListFragment">
 
+    <!--
+    Here, I chose to place linear layout for my list
+     of shoes and placed it in a constraint layout
+     where I added a floating button and a scroll view to adapt
+     to different android screen sizes
+     -->
+
+
     <data>
         <variable
             name="shoeListViewModel"

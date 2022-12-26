@@ -4,6 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".screens.game.ShoeDetailFragment">
 
+    <!--
+    Here, I chose constraint layout because
+    this view has a relatively complex orientation
+    and it is easier to build views of complex orientation
+    with constraint view -->
+
     <data>
 
         <variable
@@ -180,16 +186,3 @@
 
 
 </layout>
-
-
-<!--    android:onClick="@{()->detailShoeDetailViewModel.changeShoePicture()}"
-android:onClick="@{()->detailShoeDetailViewModel.changeShoePicture()}"
-android:onClick="@{()->detailShoeDetailViewModel.changeShoePicture()}"
-android:onClick="@{()-> detailShoeDetailViewModel.saveShoeDetailStart()}"
-android:onClick="@{()-> detailShoeDetailViewModel.cancelShoeDetailStart()}"
-android:onClick="@{(view) -> detailShoeDetailViewModel.setSize(view, 8)}"
-            android:onClick="@{(view) -> detailShoeDetailViewModel.setSize(view, 9)}"
-            android:onClick="@{(view) -> detailShoeDetailViewModel.setSize(view, 10)}"
-            android:onClick="@{(view) -> detailShoeDetailViewModel.setSize(view, 11)}"
-
-            android:onClick="@{(view) -> detailShoeDetailViewModel.setSize(view, 12)}"-->
